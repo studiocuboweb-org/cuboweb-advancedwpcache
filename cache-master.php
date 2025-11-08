@@ -1,14 +1,13 @@
 <?php
 /**
- * Plugin Name: Cache Master
- * Plugin URI:  https://github.com/terrylinooo/cache-master
+ * Plugin Name: SCW Advanced WP Cache
+ * Plugin URI:  https://github.com/studiocuboweb-org/cuboweb-advancedwpcache
  * Description: A WordPress cache plugin.
- * Version:     2.1.3
- * Author:      Terry Lin
- * Author URI:  https://terryl.in/
+ * Version:     2.1.4
+ * Author:      Marcelo Junior | Terry Lin
  * License:     GPL 3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain: cache-master
+ * Text Domain: cuboweb-advancedwpcache
  * Domain Path: /languages
  */
 
@@ -38,10 +37,10 @@ if ( ! defined( 'SCM_INC' ) ) {
  *
  * Expected values:
  *
- * SCM_PLUGIN_DIR           : {absolute_path}/wp-content/plugins/cache-master/
- * SCM_PLUGIN_URL           : {protocal}://{domain_name}/wp-content/plugins/cache-master/
- * SCM_PLUGIN_PATH          : {absolute_path}/wp-content/plugins/cache-master/cache-master.php
- * SCM_PLUGIN_LANGUAGE_PACK : cache-master/languages
+ * SCM_PLUGIN_DIR           : {absolute_path}/wp-content/plugins/cuboweb-advancedwpcache/
+ * SCM_PLUGIN_URL           : {protocal}://{domain_name}/wp-content/plugins/cuboweb-advancedwpcache/
+ * SCM_PLUGIN_PATH          : {absolute_path}/wp-content/plugins/cuboweb-advancedwpcache/cuboweb-advancedwpcache.php
+ * SCM_PLUGIN_LANGUAGE_PACK : cuboweb-advancedwpcache/languages
  */
 
 define( 'SCM_PLUGIN_NAME', plugin_basename( __FILE__ ) );
@@ -51,7 +50,7 @@ define( 'SCM_PLUGIN_PATH', __FILE__ );
 define( 'SCM_PLUGIN_LANGUAGE_PACK', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 define( 'SCM_PLUGIN_VERSION', '2.2.0' );
 define( 'SCM_CORE_VERSION', '1.3.4' );
-define( 'SCM_PLUGIN_TEXT_DOMAIN', 'cache-master' );
+define( 'SCM_PLUGIN_TEXT_DOMAIN', 'cuboweb-advancedwpcache' );
 
 /**
  * Start to run SCM plugin cores.
@@ -136,10 +135,3 @@ if ( version_compare( phpversion(), '7.1.0', '>=' ) ) {
 		}
 	}
 }
-
-/**
- * Cache Master is open sourced at:
- * https://github.com/terrylinooo/cache-master
- *
- * If you have found any bug or have any suggestion, please let me know.
- */
