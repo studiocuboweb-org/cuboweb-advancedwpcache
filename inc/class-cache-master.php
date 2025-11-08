@@ -95,7 +95,7 @@ class Cache_Master
 			}
 		}
 
-		$this->cache_key = md5($uri);
+		$this->cache_key = $prefix . "_" . md5($uri);
 
 		add_action('plugins_loaded', array($this, 'ob_start'), 5);
 		add_action('shutdown', array($this, 'ob_stop'), 0);
